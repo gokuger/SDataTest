@@ -1,0 +1,10 @@
+C:\Users\User\Desktop\Projects\SDataTest\SDataTest\bin\Debug\SDataTest.exe.config
+C:\Users\User\Desktop\Projects\SDataTest\SDataTest\bin\Debug\SDataTest.exe
+C:\Users\User\Desktop\Projects\SDataTest\SDataTest\bin\Debug\SDataTest.pdb
+C:\Users\User\Desktop\Projects\SDataTest\SDataTest\bin\Debug\Sage.SData.Client.dll
+C:\Users\User\Desktop\Projects\SDataTest\SDataTest\obj\Debug\SDataTest.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\Projects\SDataTest\SDataTest\obj\Debug\SDataTest.Form1.resources
+C:\Users\User\Desktop\Projects\SDataTest\SDataTest\obj\Debug\SDataTest.Properties.Resources.resources
+C:\Users\User\Desktop\Projects\SDataTest\SDataTest\obj\Debug\SDataTest.csproj.GenerateResource.Cache
+C:\Users\User\Desktop\Projects\SDataTest\SDataTest\obj\Debug\SDataTest.exe
+C:\Users\User\Desktop\Projects\SDataTest\SDataTest\obj\Debug\SDataTest.pdb
