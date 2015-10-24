@@ -15,6 +15,7 @@ namespace SDataTest
         private String user = "";
         private String password = "";
         private String ressourceKind;
+        var request = null;
         
         public SDataConnection(String url, String user, String password, String ressourceKind)
         {
@@ -27,12 +28,12 @@ namespace SDataTest
         public void setConnection()
         {
             ISDataService service = new SDataService(url, user, password);
-            var request = new SDataResourceCollectionRequest(service);
+            var request = new SDataResourceCollectionRequest(service);    
         }
 
         public void setRessourceKind(String ressourceKind)
         {
-            
+                 
         }
     }
 }
