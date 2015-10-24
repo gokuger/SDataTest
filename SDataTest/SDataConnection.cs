@@ -14,26 +14,20 @@ namespace SDataTest
         private String url = "";
         private String user = "";
         private String password = "";
-        private String ressourceKind;
-        var request = null;
+        private String ressourceKind = "";
         
-        public SDataConnection(String url, String user, String password, String ressourceKind)
+        public SDataConnection(String url, String user, String password) 
         {
             this.url = url;
             this.user = user;
             this.password = password;
-            this.ressourceKind = ressourceKind;
         }
 
-        public void setConnection()
+        public void setConnection(String ressourceKind)
         {
             ISDataService service = new SDataService(url, user, password);
-            var request = new SDataResourceCollectionRequest(service);    
-        }
-
-        public void setRessourceKind(String ressourceKind)
-        {
-                 
+            var request = new SDataResourceCollectionRequest(service);
+            request.ResourceKind = ressourceKind;
         }
     }
 }
