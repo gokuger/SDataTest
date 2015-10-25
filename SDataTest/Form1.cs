@@ -26,12 +26,13 @@ namespace SDataTest
             SDataConnection.setRessourceKind("Tickets");
             SDataConnection.setQueryValues("where", "TicketNumber eq '001-00-000004'");
             
-
             foreach (AtomEntry entry in SDataConnection.readRequest().Entries)
             {
                 SDataPayload payload = entry.GetSDataPayload();
-                MessageBox.Show(payload.Values["TicketNumber"].ToString());
+                MessageBox.Show(payload.Values["TicketNumber"].ToString() + " // " + payload.Values["Subject"].ToString() + " // " + payload.Values["Account"].ToString());
             }
+
+
         }
     }
 }
