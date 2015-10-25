@@ -52,6 +52,7 @@ namespace SDataTest
         {
             this.queryValue1 = queryValue1;
             this.queryValue2 = queryValue2;
+            this.request.QueryValues.Add(this.queryValue1, this.queryValue2);
         }
     }
 }
