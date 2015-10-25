@@ -24,6 +24,9 @@ namespace SDataTest
         {
             SDataConnection SDataConnection = new SDataConnection("http://localhost:3333/sdata/slx/dynamic/-/", "admin", "");
             SDataConnection.setRessourceKind("Tickets");
+            // SDataConnection.request.QueryValues.Add("where", "LastName like 'Ab%'");
+            SDataConnection.setQueryValues("where", "TicketNumber eq '001-00-000004'");
+            
 
             foreach (AtomEntry entry in SDataConnection.readRequest().Entries)
             {

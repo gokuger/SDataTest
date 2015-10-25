@@ -16,6 +16,8 @@ namespace SDataTest
         private String password = "";
         private String ressourceKind = "";
         private SDataResourceCollectionRequest request = null;
+        private String queryValue1 = "";
+        private String queryValue2 = "";
         
         
         public SDataConnection(String url, String user, String password) 
@@ -39,6 +41,17 @@ namespace SDataTest
         {
             AtomFeed feed = request.Read();
             return feed;
+        }
+
+        public SDataResourceCollectionRequest getRequest()
+        {
+            return this.request;
+        }
+
+        public void setQueryValues(String queryValue1, String queryValue2)
+        {
+            this.queryValue1 = queryValue1;
+            this.queryValue2 = queryValue2;
         }
     }
 }
