@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,7 +30,8 @@ namespace SDataTest
             foreach (AtomEntry entry in SDataConnection.readRequest().Entries)
             {
                 SDataPayload payload = entry.GetSDataPayload();
-                MessageBox.Show(payload.Values["TicketNumber"].ToString() + " // " + payload.Values["Subject"].ToString() + " // " + payload.Values["Account"].ToString());
+
+                // MessageBox.Show(payload.Values["TicketNumber"].ToString() + " // " + payload.Values["Subject"].ToString());
             }
 
 

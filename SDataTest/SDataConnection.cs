@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,6 +19,7 @@ namespace SDataTest
         private SDataResourceCollectionRequest request = null;
         private String queryValue1 = "";
         private String queryValue2 = "";
+        private ArrayList al = null;
         
         
         public SDataConnection(String url, String user, String password) 
