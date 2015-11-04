@@ -19,7 +19,7 @@ namespace SDataTest
         private SDataResourceCollectionRequest request = null;
         private String queryValue1 = "";
         private String queryValue2 = "";
-        private ArrayList al = null;
+        private ArrayList arrayList = new ArrayList();
         
         
         public SDataConnection(String url, String user, String password) 
@@ -55,6 +55,17 @@ namespace SDataTest
             this.queryValue1 = queryValue1;
             this.queryValue2 = queryValue2;
             this.request.QueryValues.Add(this.queryValue1, this.queryValue2);
+        }
+
+        public ArrayList getQueryPayload()
+        {
+            foreach (AtomEntry entry in this.readRequest().Entries)
+            {
+                SDataPayload payload = entry.GetSDataPayload();
+                this.arrayList.Add(payload);
+                // MessageBox.Show(payload.Values["TicketNumber"].ToString() + " // " + payload.Values["Subject"].ToString());
+            }
+            return this.arrayList;
         }
     }
 }
