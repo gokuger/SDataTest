@@ -25,7 +25,7 @@ namespace SDataTest
         {
             SDataConnection SDataConnection = new SDataConnection("http://localhost:3333/sdata/slx/dynamic/-/", "admin", "");
             SDataConnection.setRessourceKind("Tickets");
-            SDataConnection.setQueryValues("where", "TicketNumber eq '001-00-000004'");
+            SDataConnection.setQueryValues("where", "UserField6 eq 'MKO'");
             
 
             foreach (SDataPayload payload in SDataConnection.getQueryPayload())
